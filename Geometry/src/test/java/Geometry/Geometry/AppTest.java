@@ -45,5 +45,78 @@ class AppTest {
 		int esperado = 20 ;
 		assertEquals(esperado, r);	
 	}
+	
+	@Test
+	public void testAreaTrapecio() {
+		int resultado = Geometria.areatrapecio(2, 2, 4);
+		int esperado = 8;
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testFigura() {
+		String resultado = Geometria.figura(1);
+		String esperado = "cuadrado";
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testGetId() {
+		Geometria geo = new Geometria();
+		int resultado = geo.getId();
+		int esperado = 9;
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testGetNom() {
+		Geometria geo = new Geometria();
+		String resultado = geo.getNom();
+		String esperado = "Default";
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testGetArea() {
+		Geometria geo = new Geometria();
+		double resultado = geo.getArea();
+		double esperado = 0.0;
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testSetId() {
+		Geometria geo = new Geometria();
+		geo.setId(1);
+		int resultado = geo.getId();
+		int esperado = 1;
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testSetNom() {
+		Geometria geo = new Geometria();
+		geo.setNom("A");
+		String resultado = geo.getNom();
+		String esperado = "A";
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testSetArea() {
+		Geometria geo = new Geometria();
+		geo.setArea(4.5);
+		double resultado = geo.getArea();
+		double esperado = 4.5;
+		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void testToString() {
+		Geometria geo = new Geometria();
+		String resultado = geo.toString();
+		String esperado = "Geometria [id=9, nom=Default, area=0.0]";
+		assertEquals(esperado, resultado);
+	}
 
 }
