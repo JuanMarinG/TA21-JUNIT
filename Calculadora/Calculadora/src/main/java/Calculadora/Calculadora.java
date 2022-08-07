@@ -80,11 +80,10 @@ public class Calculadora {
 	 * 
 	 * @param a
 	 * @param b
-	 * @return r
+	 * @return result of a + b
 	 */
-	public double sum(double a, double b) {
-		r = a + b;
-		return r;
+	public double add(double a, double b) {
+		return a + b;
 	}
 
 	/**
@@ -92,11 +91,10 @@ public class Calculadora {
 	 * 
 	 * @param a
 	 * @param b
-	 * @return r
+	 * @return result of a - b
 	 */
-	public double rest(double a, double b) {
-		r = a - b;
-		return r;
+	public double susbtract(double a, double b) {
+		return  a - b;
 	}
 
 	/**
@@ -104,11 +102,10 @@ public class Calculadora {
 	 * 
 	 * @param a
 	 * @param b
-	 * @return r
+	 * @return result of a * b
 	 */
-	public double multiplication(double a, double b) {
-		r = a * b;
-		return r;
+	public double multiply(double a, double b) {
+		return a * b;
 	}
 
 	/**
@@ -118,9 +115,8 @@ public class Calculadora {
 	 * @param b
 	 * @return r
 	 */
-	public double division(double a, double b) {
-		r = a / b;
-		return r;
+	public double split(double a, double b) {
+		return a / b;
 	}
 	
 	
@@ -128,12 +124,31 @@ public class Calculadora {
 	* Square Root
 	* 
 	* @param a
-	* @return r
+	* @return result of √a
 	*/
 	public double squareRoot(double a) {
-		r = Math.sqrt(a);
-	    return r;
+	    return Math.sqrt(a);
 	}	
 	
+	
+	/**
+	* Raised
+	* 
+	* @param a
+	* @return result of a * a
+	*/
+	public double raisedTo(double a) {
+	    return a * a;
+	}
+
+	/**
+	* 1 Split a
+	* 
+	* @param a
+	* @return esult of 1/a
+	*/
+	public double oneSplitNum(double a) {
+	    return split(1,a);
+	}
 	
 }
