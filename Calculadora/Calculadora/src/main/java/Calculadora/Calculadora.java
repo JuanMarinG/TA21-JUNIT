@@ -82,7 +82,7 @@ public class Calculadora {
 	 * @param b
 	 * @return result of a + b
 	 */
-	public double add(double a, double b) {
+	public static double add(double a, double b) {
 		return a + b;
 	}
 
